@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      var resultado = 0;
+      var a = 10;
+      var b = 2;
+
+      a = prompt("Insira o primeiro numero");
+      b = prompt("Insira o segundo numero");
+
+      a = a * 1; //parseFloat() ou parseInt()
+      b = Number(b);
+      console.log(typeof a);
+
+      //Soma
+      resultado = parseInt(a) + parseInt(b);
+      //Concatenação
+      console.log("a + b = " + resultado + "!");
+      alert(`${a} + ${b} = ${resultado}`);
+      numeroAula = 1;
+      tituloConcatenado = "<h1>Aula JavaScript " + numeroAula + "</h1>";
+      tituloInterpolacao = `<h1>Aula JavaScript ${numeroAula}</h1>`;
+
+      //Subtração
+      resultado = a - b;
+      //Interpolação -> crase
+      console.log(`a - b = ${resultado}!`);
+
+      //Multiplicação
+      resultado = a * b;
+      console.log(resultado);
+
+      //Divisão
+      resultado = a / b;
+      console.log(resultado);
+    </script>
+  </body>
+</html>
